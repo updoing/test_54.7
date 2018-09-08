@@ -1,0 +1,12 @@
+
+SUBDIRS = clean decode secondary
+subdirs:
+	@for dir in $(SUBDIRS); do \
+		$(MAKE) -C $$dir; \
+		ret=$$?; \
+		if [ ! $$ret -eq 0 ]; then \
+			exit $$ret; \
+		fi; \
+	done
+
+

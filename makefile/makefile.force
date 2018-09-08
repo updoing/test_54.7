@@ -1,0 +1,26 @@
+
+vpath %.h ./decode
+vpath %.c ./decode
+source = $(wildcard *.c)
+object = $(patsubst %.c,%.o,$(source))
+
+main: $(object) decode/decode.o
+	gcc -o $@  $^
+
+decode/decode.o: FORCE
+	gcc -o $@ -c decode/decode.c
+
+FORCE:
+
+.PHONY: clean
+clean:
+	-rm -f main $(object)
+	$(RM) decode/decode.o
+
+
+clean: FORCE
+	rm -f $(object)
+FORCE:
+
+
+

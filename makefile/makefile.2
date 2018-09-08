@@ -1,0 +1,21 @@
+
+object = main.o add.o sub.o multi.o \
+	common.o
+main: $(object)
+	@echo $(object)
+	gcc -o main $(object)
+main.o: main.c common.h
+	gcc -c main.c -o main.o
+add.o: add.c
+	gcc -c add.c -o add.o
+sub.o: sub.c
+	gcc -c sub.c -o sub.o
+multi.o: multi.c
+	gcc -c multi.c -o multi.o
+common.o: common.c
+	gcc -c common.c -o common.o
+
+clean:
+	rm -f main $(object)
+
+

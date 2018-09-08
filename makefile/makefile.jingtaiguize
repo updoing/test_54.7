@@ -1,0 +1,17 @@
+
+vpath %.h ./decode
+vpath %.c ./decode
+
+source = $(wildcard *.c)
+object = $(patsubst %.c,%.o,$(source))
+object +=decode.o
+
+all: $(object)
+$(object): %.o: %.c
+	gcc -o $@ -c $<
+
+.PHONY: clean all
+clean:
+	-$(RM) $(object)
+
+

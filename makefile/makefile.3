@@ -1,0 +1,12 @@
+
+object = main.o add.o sub.o multi.o \
+	common.o
+main: $(object)
+	@echo $(object)
+	gcc -o main $(object)
+
+.PHONY: clean
+clean:
+	-rm -f main $(object)
+
+

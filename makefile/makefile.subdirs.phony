@@ -1,0 +1,10 @@
+
+
+SUBDIRS = clean decode secondary
+.PHONY: subdirs $(SUBDIRS)
+subdirs: $(SUBDIRS)
+$(SUBDIRS):
+	$(MAKE) -C $@
+
+clean: secondary
+

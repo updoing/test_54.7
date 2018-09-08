@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BEN	rbtree.c	/^RNode BEN;  \/* black empty null *\/$/;"	v
+BLACK	rbtree.h	/^typedef enum{BLACK, RED}COLOR;$/;"	e	enum:__anon1
+BNULL	rbtree.c	45;"	d	file:
+BOOL	rbtree.h	/^typedef enum{true, false}BOOL;$/;"	t	typeref:enum:__anon3
+COLOR	rbtree.h	/^typedef enum{BLACK, RED}COLOR;$/;"	t	typeref:enum:__anon1
+COMPONENT_NAME	Makefile	/^COMPONENT_NAME := RBTree$/;"	m
+CopyRTree	rbtree.c	/^RNode*  CopyRTree(RTree* root)$/;"	f
+CountLeaf	rbtree.c	/^int CountLeaf(RNode* root)$/;"	f
+Delete	rbtree.c	/^int Delete(RTree** root_p, int data)$/;"	f
+Depth	rbtree.c	/^int Depth(RNode* root)$/;"	f
+GetRNode	rbtree.c	/^RNode*  GetRNode(int data, RNode* parent, RNode* left, RNode* right)$/;"	f
+InitTree	rbtree.c	/^int  InitTree(RTree** root_p)$/;"	f
+Insert	rbtree.c	/^int Insert(RTree** root_p, int data)$/;"	f
+LIBRARY_OBJS	Makefile	/^LIBRARY_OBJS:= rbtree.o$/;"	m
+LNR	rbtree.c	/^void LNR(RNode* root, void process(RNode*))$/;"	f
+LRN	rbtree.c	/^void LRN(RNode* root, void process(RNode*))$/;"	f
+NLR	rbtree.c	/^void NLR(RNode* root, void process(RNode*))$/;"	f
+RBDelete	rbtree.c	/^int RBDelete(RTree** root_p, RNode* parent, RNode* child)$/;"	f
+RBInsert	rbtree.c	/^int RBInsert(RTree** root_p, RNode* parent, RTree** sub_root_p, int data)$/;"	f
+RBTREE_OBJS	Makefile	/^RBTREE_OBJS := rbtree.o rbtree_test.o$/;"	m
+RB_TREE_H	rbtree.h	12;"	d
+RED	rbtree.h	/^typedef enum{BLACK, RED}COLOR;$/;"	e	enum:__anon1
+RNode	rbtree.h	/^}RNode, RTree;$/;"	t	typeref:struct:node
+RTree	rbtree.h	/^}RNode, RTree;$/;"	t	typeref:struct:node
+Remove	rbtree.c	/^int  Remove(RNode** root_p)$/;"	f
+SUBDIRS	Makefile	/^SUBDIRS :=$/;"	m
+Search	rbtree.c	/^RNode* Search(RNode* root, const int data)$/;"	f
+Successor	rbtree.c	/^RNode* Successor(RNode* node)$/;"	f
+YDS_EXPORTS	Makefile	/^YDS_EXPORTS := $(PRM_PREFIX)$(COMPONENT_NAME)$(PRM_SUFFIX) $(LIB_PREFIX)$(COMPONENT_NAME)$(LIB_SUFFIX) rbtree.h$/;"	m
+YDS_IMPORTS	Makefile	/^YDS_IMPORTS :=$/;"	m
+YDS_TARGETS	Makefile	/^YDS_TARGETS := $(PRM_PREFIX)$(COMPONENT_NAME)$(PRM_SUFFIX) $(LIB_PREFIX)$(COMPONENT_NAME)$(LIB_SUFFIX)$/;"	m
+color	rbtree.h	/^	COLOR         color;   \/* 颜色     *\/$/;"	m	struct:node
+data	rbtree.h	/^	int           data;    \/* 数据     *\/$/;"	m	struct:node
+display	rbtree_test.c	/^void display(RNode* node)$/;"	f
+display2	rbtree_test.c	/^void display2(RNode* node)$/;"	f
+dright_balance	rbtree.c	/^void dright_balance(RTree** root_p, RNode* node, type_t type)$/;"	f
+false	rbtree.h	/^typedef enum{true, false}BOOL;$/;"	e	enum:__anon3
+left	rbtree.h	/^	struct node*  left;    \/* 左孩子   *\/$/;"	m	struct:node	typeref:struct:node::node
+left	rbtree.h	/^typedef enum{left, right}type_t;\/* 删除节点的时候会用到 *\/$/;"	e	enum:__anon2
+main	rbtree_test.c	/^int main(int args, char* argv[])$/;"	f
+node	rbtree.h	/^typedef struct node{$/;"	s
+parent	rbtree.h	/^	struct node*  parent;  \/* 父节点   *\/$/;"	m	struct:node	typeref:struct:node::node
+right	rbtree.h	/^	struct node*  right;   \/* 右孩子   *\/$/;"	m	struct:node	typeref:struct:node::node
+right	rbtree.h	/^typedef enum{left, right}type_t;\/* 删除节点的时候会用到 *\/$/;"	e	enum:__anon2
+rotate_left	rbtree.c	/^void rotate_left(RNode** sub_root_p)$/;"	f
+rotate_right	rbtree.c	/^void rotate_right(RNode** sub_root_p)$/;"	f
+true	rbtree.h	/^typedef enum{true, false}BOOL;$/;"	e	enum:__anon3
+type_t	rbtree.h	/^typedef enum{left, right}type_t;\/* 删除节点的时候会用到 *\/$/;"	t	typeref:enum:__anon2
